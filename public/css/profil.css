@@ -1,0 +1,173 @@
+/* Reset dan Font Dasar (opsional) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.logo span {
+  color: #333;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logout {
+  background-color: red;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ===== PROFILE SECTION ===== */
+.profile-container {
+  max-width: 600px;
+  margin: 48px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.username {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.joined {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 32px;
+}
+
+/* ===== FORM ===== */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.edit-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.edit-form input {
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.edit-form input:focus {
+  outline: 2px solid #007bff;
+  background-color: #fff;
+}
+
+.submit-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056c7;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content h2 {
+  color: #007bff;
+}
+
+.footer-content span {
+  color: #333;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact img {
+  width: 20px;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}

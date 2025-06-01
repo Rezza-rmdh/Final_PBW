@@ -1,0 +1,215 @@
+/* CSS RESET & FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.logo span {
+  color: #333;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SEARCH & FILTERS */
+.search-section {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background: #2e6edb;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters-btn {
+  background: #f5f5f5;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FILTER TAGS (DROPDOWN) */
+.filters-container {
+  display: none;
+  /* tersembunyi default */
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-tag {
+  background: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-tag:hover {
+  background: #d8d8d8;
+}
+
+/* HASIL PENCARIAN */
+.results-section {
+  padding: 20px 40px;
+}
+
+.result-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.result-card img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.result-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.result-info p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-link {
+  color: #2e6edb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content h2 {
+  color: #007bff;
+}
+
+.footer-content span {
+  color: #333;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact img {
+  width: 20px;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* CLASS SHOW UNTUK MENAMPILKAN FILTERS */
+.show {
+  display: flex !important;
+}
+
+.detail-link {
+  display: inline-block;
+  background-color: #2e6edb;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.detail-link:hover {
+  background-color: #1e5ca0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

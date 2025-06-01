@@ -1,0 +1,197 @@
+/* Reset dan Font Dasar (opsional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.logo span {
+    color: #333;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    padding-right: 1rem;
+}
+
+.logout {
+    background-color: red;
+    color: white;
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* === MAIN CONTENT === */
+main {
+    padding: 40px 20px;
+}
+
+.riwayat-wrapper {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.riwayat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.riwayat-header h3 {
+    font-size: 24px;
+    color: #222;
+}
+
+.refresh-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.refresh-btn img {
+    width: 24px;
+}
+
+.riwayat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.riwayat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.riwayat-item:hover {
+    background-color: #f0f8ff;
+}
+
+.riwayat-item strong {
+    font-size: 17px;
+    color: #2c3e50;
+}
+
+.riwayat-item .tanggal {
+    font-size: 13px;
+    color: #666;
+}
+
+.lihat-detail {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.lihat-detail:hover {
+    background-color: #0056b3;
+}
+
+.hapus-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 24px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hapus-btn:hover {
+    background-color: #d9363e;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content h2 {
+    color: #007bff;
+}
+
+.footer-content span {
+    color: #333;
+}
+
+.contact p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact img {
+    width: 20px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
