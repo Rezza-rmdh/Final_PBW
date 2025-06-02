@@ -30,8 +30,6 @@
             <label for="password" class="block font-semibold mt-4">Password</label>
             <input type="password" id="password" name="password" class="w-full p-3 mt-2 border rounded-lg" placeholder="Password" required>
 
-            <a href="{{ route('password.request') }}" class="text-blue-500 text-sm block text-right mt-2">Forgot Password?</a> 
-
             <button type="submit" class="w-full mt-4 bg-gray-700 text-white font-bold py-3 rounded-lg">
                 Sign in
             </button>

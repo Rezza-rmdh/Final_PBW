@@ -7,6 +7,7 @@ use App\Models\SearchHistory;
 use App\Models\Medicine;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -15,8 +16,8 @@ class HomeController extends Controller
         // Ambil Obat Populer
         $popularMedicines = DB::table('search_histories')
             ->join('medicines', 'search_histories.medicine_id', '=', 'medicines.id')
-            ->select('medicines.id', 'medicines.nama', 'medicines.gambar', DB::raw('COUNT(search_histories.medicine_id) as count'))
-            ->groupBy('medicines.id', 'medicines.nama', 'medicines.gambar')
+            ->select('medicines.id', 'medicines.nama_obat', 'medicines.gambar', DB::raw('COUNT(search_histories.medicine_id) as count'))
+            ->groupBy('medicines.id', 'medicines.nama_obat', 'medicines.gambar')
             ->orderByDesc('count')
             ->limit(3)
             ->get();

@@ -25,11 +25,16 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/home');
+            return $this->authenticated($request, Auth::user());
         }
 
         return back()->withErrors([
             'email' => 'Email atau password salah.',
         ]);
+    }
+
+    protected function authenticated(Request $request, $user)
+    {
+        return redirect()->route('home');
     }
 }
